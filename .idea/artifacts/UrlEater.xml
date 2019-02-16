@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="UrlEater">
+    <output-path>$PROJECT_DIR$/out/artifacts/UrlEater</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.UrlEater" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="UrlEater" />
+        <option name="vendor" value="" />
+        <option name="version" value="1.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="UrlEater.jar">
+        <element id="module-output" name="UrlEater" />
+        <element id="library" level="project" name="jsoup-1.11.3" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="396.0" prefWidth="778.0" GridPane.rowIndex="1">
+            <children>
+                <TextField fx:id="urlInput" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="749.0"
+                           text="Insert Url"/>
+                <Button fx:id="button" layoutX="14.0" layoutY="45.0" mnemonicParsing="false" text="RunUrl"/>
+                <TableView fx:id="commons" layoutX="14.0" layoutY="86.0" prefHeight="83.0" prefWidth="304.0">
+                    <columns>
+                        <TableColumn fx:id="wordCommonsLongest" prefWidth="154.0" text="The longest word"/>
+                        <TableColumn fx:id="wordCommonsLetter" prefWidth="149.0" text="Most common letter"/>
+                    </columns>
+                </TableView>
+                <TextArea fx:id="textArea" layoutX="354.0" layoutY="110.0" prefHeight="279.0" prefWidth="409.0"/>
+                <TableView fx:id="occurrence" layoutX="14.0" layoutY="184.0" prefHeight="198.0" prefWidth="304.0">
+                    <columns>
+                        <TableColumn fx:id="wordOccurrenceWord" prefWidth="149.0" text="Word"/>
+                        <TableColumn fx:id="wordOccurrenceCount" prefWidth="154.0" text="Occurrence"/>
+                    </columns>
+                </TableView>
+                <CheckBox fx:id="includeNumber" layoutX="77.0" layoutY="49.0" mnemonicParsing="false"
+                          text="Word can be or contains number(s)"/>
+                <CheckBox fx:id="includeSingleCharacter" layoutX="309.0" layoutY="49.0" mnemonicParsing="false"
+                          text="Word can be a single character"/>
+                <Label layoutX="354.0" layoutY="86.0" prefHeight="17.0" prefWidth="90.0" text="Page content"/>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
